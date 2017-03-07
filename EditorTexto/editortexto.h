@@ -20,9 +20,7 @@ private slots:
 
     void on_SaveButton_clicked();
 
-    void on_EditorTexto_iconSizeChanged(const QSize &iconSize);
-
-    void on_lineEdit_cursorPositionChanged(int arg1, int arg2);
+    void on_OpenButton_clicked();
 
 private:
     Ui::EditorTexto *ui;

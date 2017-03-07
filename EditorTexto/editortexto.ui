@@ -28,7 +28,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>30</y>
+      <y>20</y>
       <width>99</width>
       <height>27</height>
      </rect>
@@ -54,7 +54,7 @@
     <property name="geometry">
      <rect>
       <x>150</x>
-      <y>30</y>
+      <y>20</y>
       <width>371</width>
       <height>27</height>
      </rect>
@@ -77,7 +77,7 @@
     <property name="geometry">
      <rect>
       <x>150</x>
-      <y>80</y>
+      <y>90</y>
       <width>371</width>
       <height>27</height>
      </rect>
@@ -86,14 +86,27 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>70</y>
+      <x>150</x>
+      <y>60</y>
       <width>101</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>Path Not Work</string>
+     <string>Path to File</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OpenButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>99</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open File</string>
     </property>
    </widget>
   </widget>
@@ -112,7 +125,7 @@
     <enum>TopToolBarArea</enum>
    </attribute>
    <attribute name="toolBarBreak">
-    <bool>false</bool>
+    <bool>true</bool>
    </attribute>
   </widget>
   <widget class="StatusBar" name="statusBar"/>

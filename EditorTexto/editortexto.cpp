@@ -44,10 +44,12 @@ void EditorTexto::on_SaveButton_clicked()
     qDebug () << file_name;
     qDebug () << path_name;
 
+    //Transforma a variável QString para string
     string name_file = file_name.toStdString();
     string big_text = text_big.toStdString();
-    //string name_path = "/root/";
     string name_path = path_name.toStdString();
+    //string name_path = "/root/";
+
 
     //Imprime informações depois da compilação
     cout << name_path;
@@ -56,9 +58,30 @@ void EditorTexto::on_SaveButton_clicked()
 
     cout << name_file;
 
+    //Cria o Arquivo de Texto e salva
     ofstream myfile;
     myfile.open (name_file.c_str());
     myfile << big_text;
     myfile.close();
+
+}
+
+void EditorTexto::on_OpenButton_clicked()
+{
+/*
+ *Problemas com esse método, pois a existe um switch case que
+ * torna esse método o numero 4 mas deve ser o numero 2.
+ *Existe uns métodos que estão poluindo o código.
+ *
+ * Problema consertado, era só remover a chamada do método na classe
+ *
+ * Posso Criar uma classe chamada arquivo que manipula-ra o arquivo em si
+ *
+ *
+ *
+ *
+*/
+    qDebug("Escreva Esse Texto please");
+
 
 }
