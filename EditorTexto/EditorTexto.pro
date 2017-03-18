@@ -15,6 +15,7 @@ TEMPLATE = app
 SOURCES += main.cpp\
         editortexto.cpp
 
-HEADERS  += editortexto.h
+HEADERS  += editortexto.h \
+    statusbar.h
 
 FORMS    += editortexto.ui

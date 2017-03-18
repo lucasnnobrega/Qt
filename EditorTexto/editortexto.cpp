@@ -2,8 +2,11 @@
 #include "ui_editortexto.h"
 #include <QMessageBox>
 #include <QDebug>
+#include <QStatusBar>
 #include <iostream>
 #include <fstream>
+#include <QtGui>
+#include <QtCore>Q
 
 using namespace std;
 
@@ -13,6 +16,8 @@ EditorTexto::EditorTexto(QWidget *parent) :
     ui(new Ui::EditorTexto)
 {
     ui->setupUi(this);
+    statusBar()->showMessage("Inicializado com sucesso",2000);
+
 }
 //END Método Construtor
 
@@ -82,6 +87,5 @@ void EditorTexto::on_OpenButton_clicked()
  *
 */
     qDebug("Escreva Esse Texto please");
-
-
 }
+
